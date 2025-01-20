@@ -20,8 +20,9 @@ adminRouter.put(
   "/courses/:courseId",
   verifyAdmin,
   validateCourseDetails,
-  editCourse
+  editCourse,
 );
+
 adminRouter.get("/courses", verifyAdmin, getCourses);
 
 module.exports = adminRouter;
